@@ -1,0 +1,138 @@
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%; /* =10px */ 
+    font-family: "Inter", sans-serif;   
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  :root {
+    --green: hsl(75, 94%, 57%);
+    --white: hsl(0, 0%, 100%);
+    --grey700: hsl(0, 0%, 20%);
+    --grey800: hsl(0, 0%, 12%);
+    --grey900: hsl(0, 0%, 8%);
+  }
+
+  h1, h2, h3 {
+    margin: .5rem;
+  }
+
+  body{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 1.4rem;
+    height: 100vh;
+    background-color: var(--grey900);
+    color: var(--white);
+  }
+
+
+  .card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Corrige el desplazamiento */
+    width: 30rem;
+    display: flex;    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--grey800);
+    padding: 3.2rem;
+    border-radius: 2rem;
+    margin-bottom: 5rem;
+  }
+
+  @media(min-width:768px){
+    .card{
+      width: 35rem;
+    }
+  }
+
+  .card-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card-info img {
+    border-radius: 50%;
+    width: 7.5rem;
+    margin: .5rem 0 2rem 0;
+  }
+
+  .fullname {
+    font-weight: 600;
+    font-size: 2.4rem;
+
+  }
+
+  .place{
+    font-size: 1.3rem;
+    color: var(--green);
+    margin-bottom: 2rem;
+  }
+
+  .profession {
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+  }
+
+  .btn-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem ;
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .btn {
+    font-weight: 600;
+    background-color: var(--grey700);
+    border: none;
+    outline: none;
+    border-radius: .5rem;
+    color: var(--white);
+    padding: 1rem;
+    flex: 1;
+    font-family: "Inter", sans-serif;
+    cursor: pointer;
+  }
+
+  .btn:hover {
+    background-color: var(--green);
+    color: var(--grey900);
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
